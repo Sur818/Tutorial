@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="responsive-navbar-3.css">
+    
+    <script src="https://kit.fontawesome.com/1e190727d8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-----------------------------------nav-bar-------------------------------------------------------------->
+        <header>
+            <h1 class="logo">ShaKelBd</h1>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+            <nav id="navbar">
+                <ul class="nav-items">
+                    <li><a class="active" href="https://==">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">DESIGN</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul> 
+            </nav>
+            <div class="search-container">
+                <input type="search" class="input-box" name="" id="input-exp" placeholder="Type to Text">
+                <button id="search-btn"  onclick="searchOpen()">Search</button>
+            </div>
+        </header>
+        <section class="information-section">
+            <!---------------------------------------web-design-course-sec--------------------------------------------------------------------------->
+            <div class="web-design-course  sec">
+                <h1>Web Design & <span>Development</span> Course </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eligendi possimus odio aliquam
+                    pariatur fugit saepe dolorem. Eligendi ipsam rem animi cumque facere adipisci id! Voluptatibus.</p>
+                <div class="join-btn-section">
+                    <button class="join-us-btn">JOIN US</button>
+                </div>
+            </div>
+               <!-----form-section------->
+               <div class="form-section sec">
+                <form action="" method="">                                      
+                    <h2>Login Here</h2>
+                    <div class="input-section">
+                        <div class="input-cnt">
+                            <input type="email" class="input-box" name="" id="Email" required>
+                            <label class="input-label" id='label'for="Email">Enter Your Email</label>
+                        </div>
+
+                        <div class="input-cnt">
+                            <input type="password" class="input-box" name="" id="Pass" required>
+                            <label class="input-label" id="label" for="Pass">Enter Your password</label>
+                        </div>
+                    </div>
+                    <div class="btn-section">
+                        <button class="login-btn">Login</button>
+                    </div>
+                    <div class="signup-text-sec">
+                    <p class="sign-up-text"><span>Don't have an account? <a href="">Signup</a> Here</span></p>
+                </div>
+                    <div class="icon-section">
+                        <p>Login With</p>
+                        <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-skype"></i>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="responsive-navbar-3.js"></script>
+</body>
+</html> ``

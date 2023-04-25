@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    /* border: 1px solid red; */
+}
+
+.img-cnt{
+    display: flex;
+    width: 100vw;
+}
+
+.logo-img{
+    height: 100px;
+    padding-left: 5%;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+
+}
+
+.email-cnt, .password-cnt{
+    height: 50px;
+    margin: 15px 0;
+}
+
+.input-boxes{
+    height: 100%;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border: 1.7px solid grey;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.password-cnt{
+    display: flex;
+    align-items: center;
+}
+
+.show{
+    position: relative;
+    right: 60px;
+    font-size: 1.1rem;
+    color: blue;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.show:hover{
+    background-color: rgba(87, 87, 87, 0.13);
+}
+
+a{
+    text-decoration: none;
+}
+
+.remember{
+    margin: 10px 0;
+}
+
+.sign-in-btn, .sign-in-btn-google{
+    width: 40%;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    background-color: #2977c9;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.sign-in-btn-google{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.644);
+    border: 1px solid black;
+}
+
+.sign-in-btn:hover{
+    background-color: #17518f;
+}
+
+.sign-in-btn-google:hover{
+    background-color: rgba(128, 128, 128, 0.335);
+}
+
+.or-cnt{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+}
+
+.divider{
+    height: 1px;
+    width: 45%;
+    background-color: rgba(128, 128, 128, 0.596);
+}
+
+.or-text{
+    margin: 0 5%;
+}
+
+.new-join{
+    width: 40%;
+    text-align: center;
+    margin: 30px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Dropdown</title>
+
+    <style>
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            box-shadowc: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            /* z-index: 1; */
+            width: 100%;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos quidem, magnam possimus numquam omnis repellendus, perferendis vitae sed pariatur cum minima cumque temporibus illum, accusamus exercitationem ipsum quasi voluptas.
+    Libero sed voluptatibus illum adipisci magni commodi necessitatibus repudiandae inventore explicabo veniam cum, maxime maiores nam, numquam officiis repellat asperiores quia iste, aspernatur perspiciatis magnam modi doloremque. Ducimus, nisi dicta.
+    Eum, nulla? Quo, mollitia ea voluptate, porro consequatur perferendis numquam delectus reiciendis assumenda nemo ut! Nam facere eligendi pariatur delectus, aliquam voluptates fugit esse libero, sapiente aperiam optio? Reprehenderit, tempora.
+    Minus ullam tempore repellat nobis totam distinctio quisquam amet non! Eligendi nisi voluptas fugiat vel doloribus, animi hic, aliquid repellendus fuga, minima accusantium aspernatur recusandae. Sequi amet neque totam ab!
+    Libero itaque consectetur tenetur reprehenderit dolorem molestiae quam, voluptatem explicabo quo non corporis sed est blanditiis dolore provident qui incidunt animi voluptatum quis temporibus quidem et. Quasi earum eos mollitia!</p>
+</body>
+
+</html>

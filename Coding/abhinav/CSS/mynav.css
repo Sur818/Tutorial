@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    background-color:tomato;
+}
+
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#navbar ul li{
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+#navbar ul li .nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li:hover{
+    background-color: black;
+    transform: translate(0, -10px);
+}
+
+#navbar ul li:active{
+    background-color: black;
+    transform: translate(0, 0px);
+}
+
+#navbar ul .active{
+    background-color:navy;
+    color: black;
+}
+
+#navbar ul .active:hover{
+    background-color: navy;
+    color: black;
+}

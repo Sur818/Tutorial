@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    min-height:100vh;
+    background:linear-gradient(90deg,darkviolet,violet);
+  }
+
+  .main-container{
+    width:100%;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-container .section-heading{
+    font-size:1.5rem;
+    text-align: center;
+    max-width:fit-content;
+  }
+
+.main-container .product-box{
+  width:40vw;
+  margin:30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .product-box .card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius:10px;
+    background-color: white;
+    position: relative;
+  }
+
+  .product-box .card>img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:10px 10px 0px 0px;
+  }
+  
+  .product-box .card .product-name{
+    font-size:1.6rem;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:#304a7e;
+    margin-top:10px 0px;
+    user-select: none;
+  }
+
+ .product-box .card .price {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .product-box .card .about-product-text{
+    margin-top:10px;
+    font-size: 1rem;
+    font-weight:600;
+    padding:0px 10px;
+    font-family: 'Raleway', sans-serif;
+    color:rgb(87, 87, 87);
+    line-height:1.35rem;
+    margin:10px 0px 30px 0px;
+  }
+  
+  .product-box .card button {
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 18px;
+    transition: all 0.2s linear;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+  .key-input-container{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+  }
+
+  .key-input-container>div{
+    margin:15px 20px;
+  }
+   .key-input-container .input-section{
+   max-width: 200px;
+  
+   }
+
+
+  .key-input-container .input-section .input-cnt{
+    width:inherit;
+    margin:auto;
+    position: relative;
+  }
+
+
+  .key-input-container .input-section .input-box{
+    width:100%;
+    margin:auto;
+    border:none;
+    outline:none;
+    padding:13px 40px 13px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    transition: all 0.3s linear;
+  }
+
+  .input-box::placeholder{
+    font-size: 1rem;
+    font-weight:400;
+    color:gray;
+    opacity: 0.7;
+  }
+
+  .input-box:hover{
+    background-color: rgb(237, 236, 236);
+  }
+  
+  
+.key-input-container .button-section {
+  width:fit-content;
+  display: flex;
+ align-items: center;
+}
+
+  .button-section>button{
+    width:100%;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding:10px 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(90deg,hsl(298deg 44% 48%),hsl(326deg 77% 58%));
+    transition: all 0.2s linear;
+ }
+
+ .button-section>button:hover{
+   background:linear-gradient(90deg,rgb(206, 93, 210),rgb(189, 43, 125));
+ }
+
+
+ .typewriter {
+	width:100%;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid #212121;
+	animation: cursor 1s step-start infinite, 
+    text 5s steps(28) alternate infinite;
+}
+
+@keyframes cursor {
+	0%, 100% { 
+    border-color: #212121; 
+  }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width:100%; 
+  }
+}
+
+.product-box .overlay {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  background-color: #2bb2df;
+  overflow: hidden;
+  width: 100%;
+  height:100%;
+  transition: .5s ease;
+  border-radius: 10px;
+}
+
+
+.overlay.showProduct{
+  bottom: 100%;
+  height: 0%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.overlay .text{
+  font-size:2rem;
+  font-weight: bold;
+  color:white;
+  user-select: none;
+}
+
+#message{
+  position:relative;
+  color:red;
+  font-size: 0.7rem;
+}
+
+.key-input-container .validate-icon{
+  position:absolute;
+  transform: translateY(-50%);
+  top:50%;
+  right:10px;
+  color:red;
+  display: none;
+  cursor: pointer;
+}
+
+
+
+.input-box:valid ~ .validate-icon{
+  display: block;
+ }
+
+ .validate-icon.correct-btn:before{
+  content:"\f058";
+  color:green;
+ }
+
+ @media(max-width:1020px){
+.main-container .product-box{
+width:50vw;
+
+  }
+  
+
+ }
+
+
+ @media(max-width:968px){
+  .main-container .product-box{
+  width:60vw;
+  
+    }
+
+    .key-input-container>div{
+      margin:15px 10px;
+    }
+
+  
+   }
+
+
+   @media(max-width:480px){
+    body{
+      justify-content: flex-start;
+    }
+    .main-container{
+      padding:10px 0px;
+    }
+    .main-container .product-box{
+      width:inherit;
+      margin:10px auto;
+        }
+        .product-box .card{
+          width:90%;
+        }
+        .key-input-container>div{
+          margin:15px 0px;
+        }
+        .key-input-container {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .button-section>button{
+        padding:12px 30px; 
+        border-radius:10px;
+      }
+
+      .key-input-container .input-section{
+        max-width:360px;
+        width:90%;
+        }
+
+        .key-input-container .input-section .input-box{
+          border: 2px solid grey;
+        }
+
+        .main-container .section-heading{
+          font-size: 1rem;
+        }
+
+
+
+   }
+
+
+
+
+ 
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1e190727d8.js" crossorigin="anonymous"></script>
+    <title>DropDown</title>
+
+    <style>
+
+        .dropbtn{
+            font-size: 1.6rem;
+            border: none;
+            outline: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            background-color:wheat;
+            cursor: pointer;
+            
+        }
+
+        .dropdown{
+            position: relative;
+            display:inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: beige;
+            padding: 7px;
+            border-radius: 5px;
+            margin-top:6px;
+        }
+
+        .dropdown-content a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a:hover{
+            background-color: rgb(147, 145, 143);
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn{
+            background-color: rgb(215, 191, 145);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown <i class="fa fa-caret-down" aria-hidden="true"></i> </button>
+        <div class="dropdown-content">
+            <a href="">C Language</a>
+            <a href="">C++ Langauge</a>
+            <a href="">Python Languauge</a>  
+            <a href="">Java Langauage</a>
+        </div>
+    </div>
+
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum officiis ipsum inventore, quam voluptatibus rerum modi beatae quaerat repellat ducimus nihil blanditiis optio obcaecati in, illum nulla recusandae, dolorum quasi.
+    Dicta, quos nostrum. Facilis voluptatum iste aspernatur maxime, provident autem adipisci ullam? Ex ad temporibus corporis beatae ipsa quis quibusdam cum, aspernatur veritatis accusamus exercitationem consectetur voluptas assumenda. Sit, nesciunt!
+    Enim fugit porro fugiat ratione inventore quos beatae officiis doloremque quod id delectus, autem officia, harum ad nam repellendus optio quae, minus ipsam cumque facilis vero laudantium non. Veritatis, numquam?
+    Officia ab illum hic maxime, natus, odit voluptatum quas quisquam, sed est rerum molestiae libero laudantium! Quo ipsam error mollitia suscipit reiciendis? Inventore quos quis aut adipisci alias necessitatibus? Quae!</p>
+</body>
+
+</html>

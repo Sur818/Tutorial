@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    background-color: rgb(208, 107, 124);
+}
+
+.container{
+    width: 25%;
+    display: flex;
+    margin: auto;
+    background-color: white;
+    margin-top: 50px;
+    flex-direction: column;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin: 10% 0;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid #a8067551;
+    outline: none;
+    padding-bottom: 8px;
+    transition: all 200ms linear;
+}
+
+input::placeholder{
+    color: lightgray;
+}
+
+input:focus{
+    border-bottom: 2px solid #a80675;
+}
+
+.btn{
+    font-size: 1.2rem;
+    padding: 5px 0;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.continue-btn{
+    background-color: #FF1493;
+}
+
+.social-twr{
+    background-color: #009ded;
+}
+
+.social-fb{
+    background-color: #395498;
+    margin-bottom: 10%;
+}
+
+.short-text{
+    text-align: center;
+    margin: 5px 0;
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title></title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgrey;
+        }
+
+        .bottom-container {
+            width: 70vw;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: flex;
+            border-radius: 10px;
+        }
+
+        .bottom-container>.section1,
+        .section2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 3%;
+        }
+
+        .section1 {
+            background-color: rgba(249, 63, 76, 1);
+            align-items: flex-start;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            font-size: 1vw;
+        }
+
+        .section2 {
+            background-color: white;
+            align-items: flex-end;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+        }
+
+        .bottom-container .heading {
+            font-size: 2.5em;
+            font-weight: 600;
+            color: white;
+            letter-spacing: 0.5px;
+        }
+
+        .section1 .middle-text {
+            font-size: 2vw;
+            font-weight: 500;
+            color: white;
+            margin-top: 175px;
+            letter-spacing: 1px;
+        }
+
+        .middle-easy-text {
+            font-size: 1vw;
+            font-weight: 400;
+            color: white;
+            opacity: 0.7;
+        }
+
+        .bottom-section {
+            display: flex;
+            align-items: center;
+            margin-top: 175px;
+        }
+
+        .fa-angle-left {
+            font-size: 2vw;
+            font-weight: 500;
+            color: white;
+            margin-right: 5px;
+        }
+
+        .section1 .bottom-text {
+            font-size: 15px;
+            font-size: 500;
+            color: white;
+            margin: 2px 5px 0px 0px;
+        }
+
+        .fa-bars {
+            color: red;
+        }
+
+        .section2 .bottom-text {
+            font-size: 0.5rem;
+            margin-top: 400px;
+        }
+
+        .top-container {
+            width: 25vw;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            padding: 2vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 25%;
+            left: 38%;
+        }
+
+        .top-container>.heading {
+            font-size: 0.7rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .dash-line {
+            height: 2px;
+            width: 15px;
+            background-color: red;
+            margin: 5px 0px 20px 0px;
+        }
+
+        .input-section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-cnt {
+            margin: 15px 0px;
+            display: flex;
+        }
+
+        .input-box {
+            width: 100%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid grey;
+            padding: 6px 0px;
+            font-size: 1.4vw;
+            font-weight: 500;
+            opacity: 1;
+            transition: all 200ms linear;
+        }
+
+        .input-box::placeholder {
+            font-size: 1.4vw;
+            font-weight: 400;
+            color: black;
+            opacity: 0.7;
+        }
+
+        .icon {
+            font-size: 12px;
+            font-weight: 500;
+            position: relative;
+            right: 10px;
+            top: 3px;
+        }
+
+        .material-icons {
+            font-size: 15px;
+            color: grey;
+        }
+
+        .btn-section {
+            width: 100%;
+            margin: 20px 0px;
+        }
+
+        .get-started-btn {
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: rgba(249, 63, 76, 1);
+            border-radius: 20px;
+            font-size: 0.5rem;
+            font-weight: 500;
+            color: white;
+            padding: 10px 0px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+        }
+
+        .sign-in-text {
+            font-size: 0.5rem;
+        }
+
+        .sign-in-text a {
+            text-decoration: none;
+            color: rgba(249, 63, 76, 1);
+        }
+
+        .input-box:hover {
+            border-bottom: 1px solid limegreen;
+        }
+
+        .get-started-btn:hover {
+            background-color: green;
+        }
+
+        @media screen and (max-width: 600px) {
+            .bottom-container{
+                display: none;
+            }
+
+            .top-container{
+                width: 70vw;
+                justify-content: center;
+                position: inherit;
+                font-size: 12px;
+            }
+
+            .input-box{
+                font-size: 12px;
+                /* padding: 7px 0; */
+            }
+            .input-box::placeholder{
+                font-size: 12px;
+            }
+            .sign-in-text{
+                font-size: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+        <!---bottom-cnt----------->
+        <div class="bottom-container">
+            <section class="section1">
+                <div class="heading">Destiny</div>
+
+                <div class="middle-section">
+                    <p class="middle-text"><small>Let's Kick Now </small> !</p>
+                    <p class="middle-easy-text">It's Easy and takes less than 30 seconds.</p>
+                </div>
+
+                <div class="bottom-section">
+                    <i class="fa fa-angle-left"></i>
+                    <span class="bottom-text">HOME</span>
+                </div>
+            </section>
+
+            <section class="section2">
+                <i class="fa fa-bars" style="font-size:24px"></i>
+                <p class="bottom-text">
+                    <i class="fa fa-copyright"></i>
+                    copyright2016
+                </p>
+            </section>
+        </div>
+        <!---top-container------------->
+        <div class='top-container'>
+            <div class="heading">sign up</div>
+            <div class="dash-line"></div>
+            <div class="input-section">
+                <div class="input-cnt">
+                    <input class="input-box" type="text" name="username" autocomplete="off" placeholder="Name">
+                    <i class="fa fa-user-o icon"></i>
+                </div>
+                <div class="input-cnt">
+                    <input class="input-box" type="email" name="email" placeholder="Email" autocomplete="off">
+                    <i class="fa fa-envelope-o icon"></i>
+                </div>
+                <div class="input-cnt">
+                    <input class="input-box" type="password" name="pass" placeholder="Password" autocomplete="off">
+                    <i class="material-icons icon">lock_outline</i>
+                </div>
+            </div>
+
+            <div class="btn-section">
+                <button class="get-started-btn">Get Started</button>
+            </div>
+
+            <div class="sign-in-text">Have an account? <a href="#">Sign in</a>
+            </div>
+        </div>
+</body>
+
+</html>

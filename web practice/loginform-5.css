@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Noto Sans', sans-serif; 
+}
+html{
+    font-size:100%;
+}
+.main-container{
+    width:65vw;
+    margin:30px auto;
+    background-color:white;
+    display:flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius:25px;
+}
+.main-container>.section{
+ width:50%;
+}
+.form-sec{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:10% 0%;
+}
+.heading{
+ font-size:1.5rem;
+ font-weight:bolder;
+ color:rgb(135, 6, 191);
+}
+form{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.input-section{
+    width:60%;
+    margin:10px 0px;
+}
+.input-cnt{
+    margin:16px 0px;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+.input-box{
+    width:100%;
+    border:none;
+    outline:none;
+    padding: 16px 20px 13px 55px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius:25px;
+    transition:all 0.35s linear;
+}
+.input-box::placeholder{
+font-size:1rem;
+font-weight:normal;
+font-family: 'Open Sans', sans-serif;
+}
+.input-box:hover{
+    background-color:rgba(211, 211, 211, 0.146);
+}
+.input-section .icon{
+    font-size:1rem;
+    position:absolute;
+    left:20px;
+    top:35%;
+    color:rgb(135, 6, 191);
+}
+.check-section{
+    width:100%;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+.check-section>.checkbox{
+ height:15px;
+ width:15px;
+}
+.check-section>.check-label
+{ 
+    margin:0px 0px 0px 5px;
+    font-size:0.8rem;
+  font-weight:normal;
+}
+.button-section{
+width:100%;
+margin-top:20px;
+display:flex;
+justify-content: center;
+}
+.button-section .create-acnt-btn{
+    width:60%;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:500;
+    color:white;
+    text-transform:uppercase;
+    padding: 14px;
+    background:linear-gradient(45deg,violet,darkviolet);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius:25px;
+    transition:all 0.35s ease;
+}
+.button-section .create-acnt-btn:hover{
+    background:linear-gradient( darkviolet,darkviolet);
+}
+
+.informatiom-sec{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:linear-gradient(45deg,violet,darkviolet);
+    border-radius:25px;
+
+}
+.info-part{
+    width:75%;
+}
+.heading-txt{
+    margin-top:40%;
+    font-size:2.7rem;
+    font-weight:normal;
+    letter-spacing:1px;
+    color:white;
+}
+.lorem-txt{
+    width:100%;
+    margin-top:10px;
+    font-size:0.8rem;
+    font-weight: 400;
+    line-height:20px;
+    color:lightgrey;
+    opacity:0.7;
+}
+.btn-sec{
+    margin-top:25px;
+}
+.btn-sec>a{ 
+text-decoration:none;
+ border:2px solid white;
+ outline:none;
+ cursor:pointer;
+ font-size:0.8rem;
+ font-weight:normal;
+ color:white;
+ padding:10px 30px;
+ border-radius:20px;
+ opacity:0.8;
+ box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+transition:all 0.35s ease;
+}
+.btn-sec>a:hover{
+    opacity:1;
+}
+@media(max-width:1248px){
+    .main-container{
+        width:75vw;
+    }
+    .input-section{
+        width:65%;
+    } 
+    .button-section .create-acnt-btn{
+        width:65%;
+    } 
+
+} 
+
+
+@media(max-width:968px){
+    .main-container{
+        width:85vw;
+    }
+    .input-section{
+        width:70%;
+    } 
+    .button-section .create-acnt-btn{
+        width:70%;
+    } 
+     
+  html{
+        font-size:80%;
+    }
+    .input-section .icon{
+        top:40%; 
+
+    }
+    
+}
+
+
+
+@media(max-width:860px){
+    .main-container{
+        width:95vw;
+    }
+    .input-section{
+        width:80%;
+    } 
+    .button-section .create-acnt-btn{
+        width:80%;
+    } 
+    html{
+        font-size:70%;
+    }
+    .input-section .icon{
+        top:40%;
+
+    }
+    .input-box{
+        padding:12px 20px 10px 50px
+    }
+    .button-section .create-acnt-bt{
+        padding:12px;
+    }
+    
+
+}
+
+
+
+@media(max-width:480px){
+    .main-container{
+        width:90vw;
+        box-shadow:none;
+        border-radius:0px;
+
+    }
+    .main-container>.section{
+        width:100%;
+    }
+    .input-section{
+        width:80%;
+    } 
+    .button-section .create-acnt-btn{
+        width:80%;
+    } 
+    .informatiom-sec{
+        display:none;
+    }
+    
+
+
+    
+
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

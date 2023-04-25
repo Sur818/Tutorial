@@ -1,0 +1,166 @@
+@media screen and (min-width: 1100px) {
+  .card-container-teams {
+    flex-direction: row;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.team-container {
+  margin: 120px auto;
+  text-align: center;
+}
+
+.team-container h1 {
+  font-size: 40px;
+}
+
+.team-title span {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.card-body1 {
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  transition: all 0.2s linear;
+  width: 240px;
+}
+
+.img-overlay {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-overlay .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: mintcream;
+  background: linear-gradient(
+    180deg,
+    rgba(149, 149, 149, 0) 0%,
+    rgba(2, 0, 36, 1) 91%
+  );
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.img-overlay:hover > .overlay {
+  transform: translate(0);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  padding-top: 5%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+}
+
+.Branch {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.card-person-social {
+  position: absolute;
+  bottom: 10px;
+  left: 25%;
+  align-items: center;
+}
+
+.socail-on-teams > a {
+  color: white;
+}
+
+.card-person-social > a:hover {
+  color: black;
+}
+
+.linkedin-logo:hover {
+  color: #0072b1;
+}
+
+.facebook-logo:hover {
+  color: #4267b2;
+}
+
+.instagram-logo:hover {
+  color: #8a3ab9;
+}
+
+.github-logo:hover {
+  color: #171515;
+}
+.card-person-position {
+  /* color: #f3f4ff; */
+  text-align: center;
+}
+
+.btn {
+  background: rgb(6, 6, 117);
+  padding: 12px 28px;
+  border: #030622;
+  display: inline-block;
+  color: #f3f4ff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.3 linear;
+  border-radius: 10px;
+  margin: 1%;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background: rgb(89, 89, 202);
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cnt {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+.quote {
+  display: block;
+  font-size: 24px;
+  padding: 10px 0;
+  line-height: 1.4;
+  color: #fff;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+.mar {
+  margin-top: -5%;
+  margin-bottom: 5%;
+}
+
+.card-img-cnt > img {
+  /* width: 130px; */
+}

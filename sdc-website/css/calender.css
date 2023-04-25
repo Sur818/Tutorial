@@ -1,0 +1,114 @@
+.calender-container{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100vw;
+  margin-top: 100px;
+}
+
+.month-container{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+}
+
+.month-name{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 4px;
+  border-bottom: 1px solid grey;
+  margin: 35px 0;
+  text-transform:capitalize;
+}
+
+.event-container{
+  display: flex;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.date-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: yellow;
+  border-radius: 5px 0px 0px 5px;
+  padding: 25px 30px;
+}
+
+.event-date{
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.event-content-container{
+  padding: 5px 25px;
+  width: 90%;
+}
+
+.event-title{
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c2cff;
+}
+
+.event-description{
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.event-time{
+  background-color: #fff6b7;
+  width: 100px;
+  text-align: center;
+  border-radius: 21px;
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+
+
+@media screen and (min-width: 700px) {
+  
+  .month-container {
+    width: 100%;
+  }
+  .event-title{
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .month-container {
+    width: 90%;
+  }
+  .event-title{
+    font-size: 20px;
+  }
+  .calender-container{
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .month-container {
+    width: 70%;
+  }
+  .event-title{
+    font-size: 25px;
+  }
+  .calender-container{
+    width: 90vw;
+  }
+}
+

@@ -1,0 +1,139 @@
+.container{
+    width:25vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.345) 0px 1px 4px;
+    padding: 20px 10px 20px 10px;
+    border-radius: 5px;
+}
+
+.heading{
+    font-size: 2vw;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.social-btn-cnt {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.social-btn-cnt > button {
+    width: 48%;
+}
+
+.btn{
+    font-size: 1.5vw;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 200ms linear;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa{
+    padding-right: 5px;
+}
+.facebook {
+    background-color: #4267B2;
+}
+
+.facebook:hover{
+    background-color: #25488e;
+}
+
+.twitter{
+    background-color: #4285F4;
+}
+
+.twitter:hover{
+    background-color: #1967e3;
+}
+
+.input-section{
+    width: 100%;
+    margin: 10px 0px 5px 0px;
+
+}
+
+.input-box{
+    width: 100%;   
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.input-box::placeholder{
+    color: rgb(171, 171, 171);
+}
+
+ .icon{
+    font-family: fontawesome;
+}
+.below-input{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-cnt{
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgot-text a{
+    font-size: 1.2vw;
+    text-decoration: none;
+
+}
+
+input[type=checkbox] {
+    margin-right: 5px ;
+}
+
+.btn-cnt{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-btn{
+    width: 100%;
+    padding: 7px 0;
+    background-color: rgb(193, 1, 193);
+}
+
+.last-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.2vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.link-cnt{
+    margin-left: 5px;
+}

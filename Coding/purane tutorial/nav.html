@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cnt {
+            height: 40px;
+            width: 100%;
+            background-color:rgb(112, 119, 126);
+
+        }
+
+        .navbar {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            position: relative;
+            top: 5px;
+            left: 10px;
+            margin: 4px 44px;
+            text-decoration: none;
+            padding: 1px 9px;
+            transition: 1s;
+
+        }
+        
+        input {
+            position: absolute;
+            right: 28px;
+            top: 5px;
+            padding: 4px 4px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            transition: 1s;
+            
+
+        }
+
+            
+ 
+        a:hover {
+            /* border: 1px solid bisque; */
+            background-color: rgb(172, 151, 127);
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+        .navbar h3{
+            position: absolute;
+            left: 10px;
+            top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cnt">
+        
+        <nav class="navbar">
+            <h3>Hello</h3>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">More</a>
+            <input type="text" placeholder="seaech here">
+        </nav>
+    </div>
+</body>
+
+</html>

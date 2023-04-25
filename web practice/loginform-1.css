@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.main-container {
+  max-width: 27vw;
+  background-color: white;
+  border-radius: 10px;
+  margin: 6vh auto;
+  display: flex;
+  padding: 20px 40px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.sign-in-heading {
+  font-size: 2em;
+  color: hsl(285deg 35% 26%);
+  margin: 30px 0px 10px 0px;
+}
+.input-sec {
+  width: 100%;
+}
+.input-cnt {
+  width: 100%;
+  margin: 20px 0px;
+}
+.input-box {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius:10px;
+  transition:all 0.25s linear;
+
+}
+.input-box::placeholder{
+    font-size:0.8em;
+    font-weight:bold;
+    color:#420d4f;
+}
+
+.input-box:hover{
+  outline:1PX solid violet;
+  background-color:rgb(248, 245, 245);
+}
+
+.sign-in-button{
+ border:none;
+ outline:none;
+ cursor:pointer;
+ background-color:#bc59d7;
+ font-size:0.7em;
+ font-weight:500;
+ color:white;
+ padding:10px 40px;
+ border-radius:20px;
+ transform:all 0.35s ease;
+ box-shadow: rgba(188, 89, 215, 0.3) 0px 19px 38px, rgba(188, 89, 215, 0.22) 0px 15px 12px;
+}
+.sign-in-button:hover{
+  background-color:green;
+  box-shadow: rgba(0, 255, 0, 0.3) 0px 19px 38px, rgba(0, 255, 0, 0.22) 0px 15px 12px;
+}
+.or-login-text{
+  margin:40px 0px 20px 0px;
+  font-size:0.7em;
+  font-weight:500;
+  opacity:0.7;
+
+}
+.social-link-sec{
+  display:flex;
+  align-items:center;
+}
+
+.social-link-sec a{
+  height:36px;
+  width:36px;
+  border-radius:50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  margin:0PX 6px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:all 0.35s ease;
+}
+ .social-link-sec img{
+ height:24px;
+ width:24px;
+} 
+ .social-link-sec i{
+  font-size:1.2em;
+ } 
+.social-link-sec a:hover{
+  box-shadow: rgba(0,  255, 0, 0.7) 0px 0.0625em 0.0625em, rgba(0,  255, 0, 0.7) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  outline:1px solid green;
+  background-color:rgb(248, 245, 245);
+  transform:scale(1.05);
+}
+
+.bottom-link{
+margin-top:70px;
+}
+
+.bottom-link a{
+  text-decoration:none;
+  font-size:0.8em;
+  font-weight:600;
+}
+
+

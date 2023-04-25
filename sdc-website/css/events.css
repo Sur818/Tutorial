@@ -1,0 +1,125 @@
+
+.event-main-container{
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  width: 90vw;
+  margin: 55px auto 0 auto;
+}
+
+.top-view{
+  position: fixed;
+  width: 100vw;
+  background: white;
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+}
+
+.event-button-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events-buttons{
+  text-align: center;
+  margin: 0 5px;
+  font-size: 20px;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 2px 2px 0 0;
+  transition: all 150ms linear;
+}
+
+.open-event{
+  border-bottom: 4px solid #000000;
+  font-weight: 600;
+}
+
+.events-buttons:hover{
+  /* background-color: #f4f480; */
+  background-color: #80808036;
+}
+
+.event-line{
+  height: 1px;
+  background: #0000002b;
+  margin-bottom: 30px;
+}
+
+.past-events{
+  margin-top: 110px;
+}
+
+.sessions-info{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  background: #b0e0e69e;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding-top: 20px;
+  width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.sessions-info h2{
+  margin: 10px 0;
+}
+
+.sessions-info p{
+  margin: 10px 0 30px 0;
+  font-size: 20px;
+}
+
+.sessions-info ul {
+  margin: 10px 0 40px 20px;
+}
+
+.sessions-info ul li{
+  margin: 10px 0;
+}
+
+.sessions-info img{
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.sessions-info .session-line{
+  background-color: black;
+  width: 150px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 200px) {
+  .sessions-info{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .sessions-info{
+    width: 80%;
+  }
+  .sessions-info img{
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .sessions-info{
+    width: 70%;
+  }
+  .sessions-info img{
+    height: 500px;
+  }
+}

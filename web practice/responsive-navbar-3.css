@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+ height:100vh;
+ width:100vw;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  padding: 0px 30px;
+  height: 80px;
+  font-family: "Playfair Display", serif;
+  background-color: black;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+header #navbar {
+  display: flex;
+}
+
+header #navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+header #navbar ul li {
+  list-style-type: none;
+  margin: 0px 13px;
+}
+
+header #navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+header #navbar ul li a:hover {
+  background-color: white;
+  color: black;
+}
+header #navbar ul li a.active {
+  background-color: antiquewhite;
+  color: black;
+}
+header #navbar ul li a.active:hover {
+  background-color: white;
+  color: black;
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  color: rgb(238, 167, 35);
+  user-select: none;
+}
+header .search-container{
+  display:flex;
+}
+
+header .search-container > input {
+  padding: 10px;
+  background: transparent;
+  border: 1px solid hsl(28deg 100% 49%);
+  border-radius: 3px 0px 0px 3px;
+  outline: none;
+  color: white;
+  transition: all 0.35s ease;
+}
+
+header .search-container > input::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+header .search-container > input:focus {
+  border: 1px solid white;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+header .search-container > button {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  padding: 13px 22px;
+  background-color: hsl(27deg 100% 50%);
+  border-radius: 0px 3px 3px 0px;
+  margin-left: -5px;
+  transition: all 0.5s linear;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+header .search-container > button:hover {
+  background-color: rgb(219, 102, 6);
+}
+
+header .search-container > button:focus {
+  background-color: rgb(170, 79, 5);
+}
+.fa-bars {
+  display: none;
+}
+.container > .information-section {
+  margin-top: 100px;
+  width: 100%;
+  padding: 0px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container > .information-section > .web-design-course {
+  width: 35%;
+}
+.container > .information-section > .form-section {
+  width: 280px;
+}
+.information-section > .web-design-course {
+  display: flex;
+  flex-direction: column;
+}
+.web-design-course > h1 {
+  font-size: 2.8rem;
+}
+.web-design-course span {
+  color: hsl(0deg 61% 57%);
+}
+
+.web-design-course > p {
+  line-height: 26px;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+}
+.web-design-course > .join-btn-section {
+  margin-top: 10px;
+}
+.web-design-course > .join-btn-section .join-us-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 30px;
+  color: black;
+  background-color: hsl(26deg 100% 50%);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  transition: all 0.5s linear;
+}
+.web-design-course > .join-btn-section .join-us-btn:hover {
+  background-color: rgb(219, 102, 6);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  color: white;
+  background-color: rgb(14 18 17);
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-section h2 {
+  width: 100%;
+  display: block;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 7px;
+  color: rgb(170, 79, 5);
+  background-color: white;
+  text-align: center;
+}
+.form-section .input-section {
+  width: 100%;
+}
+.input-cnt {
+  margin: 35px 0px 25px 0px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-section .input-box {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border-bottom: 1px solid #924209;
+  padding: 5px 0px;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.form-section .input-box::placeholder {
+  font-size: 0.7rem;
+  font-weight: Normal;
+}
+
+.form-section .input-box:focus {
+  border-bottom: 1px solid limegreen;
+}
+
+.form-section .input-label {
+  position: absolute;
+  top:0rem;
+  left:2px;
+  font-size: 1rem;
+  transition: 0.5s ease;  
+}
+
+.form-section .input-box:focus ~.input-label,.input-box:valid ~.input-label{
+  top:-1rem;
+  left:0;
+  font-size: 0.7rem;
+  color:aliceblue;
+}
+
+.form-section .btn-section {
+  width: 100%;                  
+}
+
+.form-section .btn-section > .login-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background-color: hsl(27deg 100% 50%);
+  padding: 6px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.form-section .btn-section > .login-btn:hover {
+  background-color: rgb(219, 102, 6);
+}
+.form-section .signup-text-sec {
+  width: 80%;
+  margin: 15px;
+  text-align: center;
+}
+.signup-text-sec > p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.signup-text-sec a {
+  text-decoration: none;
+  color: hsl(17deg 51% 39%);
+}
+.icon-section {
+  width: 100%;
+}
+.icon-section > p {
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+.icon-section .icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon-section .icons > i {
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.icon-section .icons > i:hover {
+  color: hsl(27deg 100% 50%);
+}
+
+@media screen and (max-width: 1150px) {
+  header .search-container {
+    width:70%;
+    position: absolute;
+    top: 85px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    overflow: hidden;
+  } 
+
+   header .search-container > input {
+    width:100%;
+    border: 2px solid orange !important;
+    color:black;
+  }
+
+  header .search-container>input::placeholder{
+    color:black;
+    font-weight: bolder;
+  }
+  .container > .information-section > .web-design-course {
+    width: 50%;
+    text-align: center;
+    display: flex;
+   justify-content: center;
+  }
+}
+@media screen and (max-width: 900px){
+  .fa-bars {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  header #navbar {
+    height: 0px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: black;
+    z-index: 1;
+    transition:0.5s;
+  }
+
+  header #navbar ul {
+    display: block;
+    width: fit-content;
+    margin:0px auto;
+    text-align: center;
+    transition:0.5s;
+    opacity: 0;
+  }
+  header #navbar ul li {
+    margin: 50px 13px;
+  }
+
+  header #navbar.active {
+    height: 450px;
+  }
+  header #navbar.active ul {
+    opacity: 1;
+  }
+  header .search-container{
+  width:fit-content;
+  top:22px;
+  left:auto;
+  right:100px;
+  }
+
+   header .search-container > input{
+    width:0px; 
+    padding:10px 0px;
+    color:white;
+  } 
+  
+
+  header .search-container>input::placeholder{
+    color:white;
+  }
+
+  header .search-container > input.open{
+    width:150px;
+    padding:10px;
+  } 
+
+  .container > .information-section > .web-design-course {
+    width: 55%;
+  }
+ 
+}
+
+
+
+@media screen and (max-width:800px) {             
+  .container>.information-section{
+  justify-content:center;
+  }
+  .container > .information-section > .web-design-course {
+    width:100%;
+    text-align: center;
+    margin-bottom:50px;
+  }
+}
+
+
+
+@media screen and (max-width:600px){
+  header{
+    padding:0px 15px;
+  }
+  header .search-container {
+    width:95%;
+    position: absolute;
+    top: 85px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    overflow: hidden;
+  }
+
+  header .search-container > input {
+    width:100%;
+    border: 2px solid orange !important;
+    color: black;
+  }
+
+}
+

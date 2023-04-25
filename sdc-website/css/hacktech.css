@@ -1,0 +1,105 @@
+main {
+  margin-top: 100px;
+}
+
+.hacktech-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hacktech-heading > img {
+  position: relative;
+  animation-name: hideShow;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes hideShow {
+  0% {
+    left: 10px;
+    /* filter: blur(0px); */
+    /* transform: scale(1.2); */
+  }
+  100% {
+    left: 0px;
+    /* filter: blur(2px); */
+    /* transform: scale(1.0); */
+  }
+}
+
+.lastest-hacktech {
+  width: 90vw;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.hacktech-container {
+  width: 85%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 7px;
+
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.margin-v-10 {
+  margin: 10px 0;
+}
+
+.register-btn {
+  outline: none;
+  border: none;
+  padding: 8px 10px;
+  background-color: rgb(3, 61, 148);
+  font-size: 20px;
+  width: 150px;
+  font-weight: 600;
+  border-radius: 7px;
+  margin: 20px 0;
+  color: white;
+  cursor: pointer;
+}
+
+.hacktech-line {
+  background-color: black;
+  width: 150px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.hacktech-img {
+  display: flex;
+}
+
+.hacktech-img > img {
+  width: 90%;
+  /* height: 600px; */
+  margin: auto;
+  border-radius: 8px;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.font-medium {
+  font-size: medium;
+}
+
+.font-larger {
+  font-size: larger;
+}
+
+.font-xx-larger {
+  font-size: xx-large;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Radio Canada', sans-serif;
+        }
+        body {
+            background-color: #c02dde;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .container {
+            width: 30vw;
+            margin: auto;
+            background-color: white;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .heading {
+            font-size: 2vw;
+            font-weight: 600;
+            margin-top: 30px;
+            
+        }
+
+        .social_media_button {
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+
+        }
+
+        .social_media_button button {
+
+            padding: 10px 0;
+            outline: none;
+            border: none;
+            width: 48%;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.5s;
+
+        }
+
+        .social_media_button button:hover,.buttton_section button:hover {
+            opacity: 0.8;
+        }
+
+        .facebook_btn {
+            background: #3B5998;
+
+        }
+
+        .twitter_btn {
+            background: #55ACEE;
+        }
+
+        .fa {
+            
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        .fa-facebook {
+            color: white;
+        }
+
+        .fa-twitter {
+            color: white;
+        }
+
+        .input_section {
+            width: 75%;
+            margin-top: 10px;
+        }
+
+        .input_cnt{
+           margin: 13px 0px;
+        }
+
+        .input_cnt input,.buttton_section button{
+            width: 100%;
+            padding: 10px 10px;
+            font-family: fontawesome;
+            font-size: 1.3rem;
+            border: none;
+            border: 1px solid rgb(173, 171, 171);
+            outline: none;
+            border-radius: 3px;
+        }
+
+        .input_cnt input::placeholder{
+            font-size: 1.2rem;
+
+        }
+
+        .check_section{
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: -5px;
+        }
+
+        .check_section a{
+            text-decoration: none;
+            color: #b879ca;
+        }
+
+        .buttton_section{
+            width: 75%;
+            margin-top: 15px;
+        }
+
+        .buttton_section button{
+            background-color: #be2ede;
+            color: white;
+            font-weight: 500;
+            font-family: 'Radio Canada', sans-serif;
+            cursor: pointer;
+        }
+
+        .remember{
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .remember a{
+            text-decoration: none;
+            color: #be2ede;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">Login Form</div>
+        <div class="social_media_button">
+            <button class="facebook_btn"><a href="#" class="fa fa-facebook"></a> Facebook</button>
+            <button class="twitter_btn"><a href="#" class="fa fa-twitter"></a> Twitter</button>
+        </div>
+        <div class="input_section">
+            <div class="input_cnt">
+                <input type="text" placeholder="&#xf007  Email or Phone">
+            </div>
+            <div class="input_cnt">
+                <input type="password" placeholder="&#xf023  Password">
+            </div>
+        </div>
+
+        <div class="check_section">
+            <div class="check_cnt">
+            <input type="checkbox" name="" id="check">
+            <label for="check">Remember me</label>
+        </div>
+            <a href="#">Forgot password?</a>
+        </div>
+
+        <div class="buttton_section">
+            <button>Login</button>
+        </div>
+
+        <div class="remember">
+            <p>Not a member?</p>
+            <span><a href="#">Signup now</a></span>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

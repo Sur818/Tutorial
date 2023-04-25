@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive-nav-bar.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+<body>
+    <div class="container">
+         <h1>LOGO</h1>
+        <span><i class="fa fa-bars icon" onclick="showmenu()" aria-hidden="true"></i></span>
+        <nav class="navbar">
+            <ul>
+                <li><a  class="active" href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Our Teams</a></li>
+                <li><a href="#">Calender</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<script>
+    let iconclass=document.getElementsByClassName("navbar")[0];
+    notdisplayed=true;
+    function showmenu(){
+        if(notdisplayed){
+            iconclass.style.display='Block'; 
+            notdisplayed=false;
+        }
+        else{
+            iconclass.style.display='none'; 
+            notdisplayed=true;
+        }
+       
+    }
+</script>
+</html>

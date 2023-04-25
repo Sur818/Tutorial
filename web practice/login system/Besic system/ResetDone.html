@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+     min-height:100vh;
+     background:linear-gradient(90deg,darkviolet,violet);
+}
+
+.reset-txt{
+    font-size:2.5rem;
+    color:white;
+    user-select: none;
+}
+
+.return-main-page-link p{
+  margin-top: 15px;
+  text-align: center;
+  font-size:1.3rem;
+  font-weight: 500;
+}
+
+.return-main-page-link p a{
+    text-decoration: none;
+    color:aliceblue;
+    transition: all 0.3s linear;
+}
+
+.return-main-page-link p a:hover{
+    color:lightblue;
+}
+    </style>
+</head>
+<body>
+    <main class="main-contaner">
+      <h1 class="reset-txt">your password reset successfully!</h1>
+      <div class="return-main-page-link">
+        <p>Return to main page <a href="index.html">Login here</a></p>
+      </div>
+
+    </main>
+</body>
+</html>

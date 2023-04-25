@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+margin:0px;
+padding:0px;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items: center;
+min-height:100vh;
+background:linear-gradient(90deg,darkviolet,violet);
+}
+
+.main-container{
+    width:100w;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+
+
+.registration-txt{
+font-size:2.5rem;
+color:white;
+user-select: none;
+text-align: center;
+}
+
+.return-main-page-link p{
+margin-top: 15px;
+text-align: center;
+font-size:1.3rem;
+font-weight: 500;
+}
+
+.return-main-page-link p a{
+text-decoration: none;
+color:aliceblue;
+transition: all 0.3s linear;
+}
+
+.return-main-page-link p a:hover{
+color:lightblue;
+}
+
+.random-block-container{
+width:35vw; 
+margin:30px auto;
+padding:10px;
+display:flex;
+background-color: white;
+flex-direction: column;
+align-items: center;
+border-radius:10px; 
+box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;  
+}
+
+.random-block-container>h1{
+margin:10px 0px 15px 0px;
+font-size:1.6rem;
+text-transform: capitalize;
+font-weight:bold;
+color: #f35626;
+background-image: -webkit-linear-gradient(90deg,hsl(298deg 44% 48%),hsl(326deg 77% 58%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textanimation 10s infinite linear;
+}
+
+@keyframes textanimation  {
+from {
+filter: hue-rotate(0deg);
+}
+to {
+filter: hue-rotate(-360deg);
+}
+}
+
+
+.random-block-container .random-box{
+width:100%;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center; 
+}
+
+.random-block-container .random-box .input-cnt{
+width:70%;
+
+}
+
+.random-block-container .random-box .input-cnt input{
+width:100%;
+border: 2px solid black;
+outline:none;
+padding:50px 20px;
+border-radius:5px;
+transition: all 0.3s ease;
+text-align: center;
+}
+
+
+.random-block-container .random-box .input-cnt input::placeholder{
+    font-size: 2rem;
+    color:black;
+    font-weight: bold;
+}
+
+.random-block-container .random-box .input-cnt input:focus{
+border:2px solid red;
+}
+
+
+
+.random-block-container .random-box .button-section{
+width:100%;
+margin:20px auto;
+display: flex;
+justify-content:center;
+align-items: center;
+}
+
+.random-block-container .random-box .button-section .btn{
+margin:0px 7px;
+border:none;
+outline:none;
+cursor:pointer;
+padding:10px;
+border-radius: 5px;
+font-size:12px;
+font-weight: 600;
+color:white;
+background:linear-gradient(90deg,hsl(298deg 44% 48%),hsl(326deg 77% 58%));
+transition: all 0.2s linear;  
+}
+
+
+.random-block-container .random-box .button-section .btn:hover{
+background:linear-gradient(90deg,rgb(206, 93, 210),rgb(189, 43, 125));
+}
+
+
+
+@media(max-width:1220px) {
+  .random-block-container{
+    width:90%;
+  }
+
+  .random-block-container .random-box{
+width:100%;
+  }
+
+  .random-block-container .random-box .input-cnt{
+    width:60%;
+    
+    }
+}
+
+
+@media(max-width:968px){
+    .random-block-container .random-box .input-cnt{
+        width:70%;
+        
+        }
+
+        
+.random-block-container .random-box .button-section .btn{
+  padding:11px;
+  font-size: 0.9rem;
+}
+    }
+
+    @media(max-width:700px){
+html{
+    font-size: 80%;
+}
+
+.random-block-container .random-box .input-cnt{
+    width:80%;
+    
+    }
+
+    .random-block-container .random-box .button-section .btn{
+        padding:10px 13px;
+        font-size: 0.9rem;
+      }
+
+
+    }
+
+
+    @media(max-width:480px){
+        html{
+            font-size: 60%;
+        }
+        .random-block-container>h1{
+            font-size: 1.5rem;
+        }
+        .random-block-container .random-box .input-cnt{
+            width:90%;
+            
+            }
+        
+        
+    }
+
+    @media(max-width:280px){
+        html{
+            font-size:45%;
+        }
+        .random-block-container .random-box .button-section .btn{
+            padding:10px 10px;
+            font-size: 0.75rem;
+          }
+    }
+
+
+
+
+
+

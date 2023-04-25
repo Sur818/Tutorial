@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./CSS/initialize.css"> -->
+    <link rel="stylesheet" href="./CSS/mynav.css">
+    <title>Navigation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="active"><a class="nav-link" href="#">Home</a></li>
+            <li><a href="#"  class="nav-link" >About</a></li>
+            <li><a href="#"  class="nav-link" >Tutorials</a></li>
+            <li><a href="#"  class="nav-link" >Contact Us</a></li>
+            <li><a href="#"  class="nav-link" >Feedback</a></li>
+        </ul>
+    </nav>
+    
+    <script>
+        let lists = document.querySelectorAll('li');
+        lists.forEach((list) => {
+            list.addEventListener('click', () => {
+
+              // ----
+                lists.forEach((list) => {
+                    list.classList.remove('active');
+                })
+                list.classList.add('active');
+
+                // ----
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>

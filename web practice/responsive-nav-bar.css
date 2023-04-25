@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width:100%;
+  padding:15px 20px 15px 50px;
+  display:flex;
+  background-color: cadetblue;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+}
+
+.container h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  user-select:none;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  margin:0px 20px;
+}
+
+.navbar ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: rgb(85, 166, 198);
+  box-shadow: rgba(159, 157, 157, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: 0.35s;
+}
+
+.container .icon{
+  display:none;
+}
+.navbar ul li a:hover {
+  background-color: black;
+  color: white;
+}
+.navbar ul li a:active {
+  background-color: black;
+  transform: translate(0, 2px);
+}
+.navbar ul .active {
+  background-color: orange;
+  color: black;
+  font-weight: 600;
+}
+
+.navbar ul .active:hover {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+@media(max-width:1100px){
+  .container{
+      padding:0px 10px 0px  30px;
+  }
+  .navbar ul li {
+    list-style-type: none;
+    margin: 15px 15px;
+  
+  }
+}
+@media(max-width:900px){
+  .container{
+    padding:0px 10px;
+}
+  .navbar{
+     position:absolute;
+     /* this absolute value make nav-bar div to down*/
+     top:43px;
+     left:0;
+     right:0;
+     width:100vw;
+     background-color: cadetblue;
+     overflow:hidden;
+     display:none;
+ }
+  .navbar ul{
+    display:block;
+    width:fit-content;
+    margin: auto;
+    text-align:center;
+    transition:0.5s;
+  }
+  .navbar ul li{
+    margin:22px 0px;
+  }
+  .container .icon{
+    display:block;
+    color:white;
+    font-size:2rem;
+  }
+}

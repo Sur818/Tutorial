@@ -1,0 +1,49 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: red;
+}
+
+.main{
+  width: 90vw;
+  background-color: blue;
+  height: 400px;
+  margin: 10px auto;
+
+  font-size: 2rem;
+}
+
+.chodu{
+  font-size: 30px;
+}
+
+.fuckru{
+  /* 
+      1em = 100% of its parent
+
+      1em = 100% of 30px = 30px
+
+      0.5rem = 50% of 30px = 15px
+  */
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  body{
+    background-color: pink;
+  }
+
+  .main{
+     font-size: 10rem; 
+  }
+
+  .chodu{
+    font-size: 60px;
+  }
+}
+
+

@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+     min-height:100vh;
+     background:linear-gradient(90deg,darkviolet,violet);
+  }
+
+  .main-container{
+    width:30vw;
+    padding:30px ;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+
+  .main-heading{
+    font-size: 2rem;
+    font-weight:600;
+    color:black;
+  }
+
+  .main-container>section{
+    width:100%;
+    display: flex;
+    flex-direction: column; 
+  }
+
+
+  .tab {
+    margin:30px auto 20px auto;
+    overflow: hidden;
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    width:50%;
+    border:1px solid lightgrey;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-size:17px;
+    font-weight: 600;
+    transition: 0.3s;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    border-radius: 5px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background:linear-gradient(90deg,hsl(298deg 44% 48%),hsl(326deg 77% 58%));
+    color:white;
+  }
+  
+  
+  /* Style the tab content  */
+  .main-container>.tabcontent {
+    display: none;
+  }
+
+
+  form{
+    width:100%;
+  }
+
+  .input-section{
+     width:inherit;
+     margin:0px auto;
+     display: flex;
+     flex-direction: column;
+  }
+
+  .input-section .input-cnt{
+     width:100%;
+     margin:10px auto;
+     position: relative;
+  }
+
+  .input-section .input-cnt .input-box{
+    width:100%;
+    border:none;
+    outline:none;
+    padding:13px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    transition: all 0.3s linear;
+  }
+
+   .input-box::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+    color:gray;
+    opacity: 0.7;
+  }
+
+  .input-box:hover{
+    background-color: rgb(237, 236, 236);
+  }
+
+  a{
+    text-decoration: none;
+    font-size:1rem;
+    font-weight:500;
+    color:hsl(326deg 77% 58%);
+    transition: all 0.3s linear;
+  }
+
+  .forgot-link-sec>a:hover{
+    color:red;
+  }
+
+  .button-section{
+    margin:20px auto;
+  }
+
+
+  .button-section>button{
+     width:100%;
+     border:none;
+     outline:none;
+     cursor:pointer;
+     padding:10px;
+     border-radius: 5px;
+     font-size: 1.2rem;
+     font-weight: 500;
+     color:white;
+     background:linear-gradient(90deg,hsl(298deg 44% 48%),hsl(326deg 77% 58%));
+     transition: all 0.2s linear;
+  }
+
+  .button-section>button:hover{
+    background:linear-gradient(90deg,rgb(206, 93, 210),rgb(189, 43, 125));
+  }
+
+
+.last-information-section{
+text-align: center;
+}
+
+.last-information-section a:hover{
+    color:green;
+    opacity:0.5;
+}
+
+#message{
+  position:relative;
+  color:red;
+  font-size: 0.7rem;
+  
+
+}
+
+.fa{
+  position:absolute;
+  transform: translateY(-50%);
+  top:50%;
+  right:15px;
+  color:grey;
+  cursor:pointer;
+  font-size:1rem;
+  display: none;
+  color:violet;
+ }
+
+ .fa:active{
+  color:darkviolet;
+ }
+
+ .input-box:valid ~ span .fa{
+  display: block;
+ }
+
+ .fa.hide-btn:before{
+  content:"\f070";
+ }
+
+ #primary-message{
+  text-align:center;
+  margin-top:5px;
+  font-size: 0.9rem;
+  font-weight:500;
+ }
+
+ #primary-message.red{
+  color:red;
+ }
+
+ #primary-message.green{
+  color:rgb(17, 177, 17);
+ }
+
+ #primary-message-box{
+  padding:5px 15px;
+  background-color: aliceblue;
+  display: flex;
+  align-items:baseline;
+  display: none;
+ }
+
+ .fa-xmark{
+  margin-left:10px;
+ color:#444;
+ cursor:pointer;
+ }
+
+ .fa-xmark:active{
+  color:red;
+ }
+
+ .fa-xmark:hover{
+  color:rgb(232, 46, 232);
+ }
+
+ @media(max-width:1050px){
+  .main-container{
+    width:45%;
+    
+  }
+  .main-heading{
+    font-size:1.6rem;
+  }
+ }
+
+ @media(max-width:920px){
+  .main-container{
+    width:50%;
+  }
+  .main-heading{
+    font-size:1.5rem;
+  }
+ }
+
+
+ @media(max-width:768px){
+  .main-container{
+    width:75%;
+  }
+
+ }
+
+ @media(max-width:481px){
+  body{
+justify-content: flex-start;
+background: white;
+  }
+
+  .main-container{
+    width:100%;
+    box-shadow: none;
+    border-radius:5px;
+  }
+
+  html{
+    font-size: 70%;
+  }
+
+ }
+
+
+
+
+
+
+

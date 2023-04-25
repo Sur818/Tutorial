@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="toast.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="https://kit.fontawesome.com/1e190727d8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!----------------main-container----------------->
+    <div class="main-container">
+    <!----------------header-section------------------------>
+         <header>
+            <h1 class="main-heading">Forgot <span>Password</span></h1>
+        </header>
+        <div class="line"></div>
+    <!-------------------form-section------------------------------>
+        <section>
+            <form action="" method="" id="forgot-form">
+                <!---------input-section---------->
+                <div class="input-section">
+                    <div class="input-container user-cnt">
+                        <input  type="text" class="input-box" name="" id="user_name"  required>
+                        <label class="label" for="user_name">Username<sup>*</sup></label>
+                    </div>
+                </div>
+                <!---------button-section------------>
+                <div class="button-section">
+                    <button class="forgot-btn" id="forgot-btn">Forgot Password <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                </div>
+            </form>
+        </section>
+    <!-------------------footer-section------------------>
+        <footer>
+            <div class="last-info">
+                <span>Remembered? go back to <a href="index.html">Login</a></span>
+            </div>
+        </footer>
+    </div>
+    <!--------------------toast-section-------------->
+    <div class="toast toast-2">
+        <div class="toast-content">
+            <i class="fa-solid fa-xmark cancel"></i>
+            <div class="message"> 
+                <span class="text text-1">User Not Found</span>
+                <span class="text text-2">Please Enter a Valid User Name!</span>
+            </div>
+            <i class="fa-solid fa-xmark close"></i>
+            <div class="progress"></div>
+        </div>
+    </div>
+<script src="Forgot.js"></script>
+<script src="storage.js"></script>
+</body>
+

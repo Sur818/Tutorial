@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/initialize.css">
+    <link rel="stylesheet" href="./CSS/body-center.css">
+    <title>Before</title>
+
+    <style>
+        
+    .paragraph{
+        color: red;   
+        font-size: 3vw;
+    }
+
+    .paragraph::before{
+        content: "Hello";
+        color: pink;
+    }
+
+    .paragraph::after{
+        content: "";
+        height: 50px;
+        width: 50px;
+        background-color: black;
+    }
+
+
+
+    </style>
+    
+</head>
+<body>
+    <p class="paragraph">
+        Suraj Sir!
+    </p>
+</body>
+</html>

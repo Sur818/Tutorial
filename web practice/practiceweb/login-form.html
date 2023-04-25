@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+   *{
+     margin:0px;
+     padding:0px;
+     box-sizing:border-box;
+     font-family: 'Poppins', sans-serif;
+   }
+   body{
+    background-color:white;
+    min-height:100vh;
+    width:100VW;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+   }
+   .container{
+     width:30vw;
+     margin:auto;
+     padding:40px 25px;
+     background-color:#1d2b3a;
+     border:2px solid darkcyan;
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     justify-content:center;
+     box-shadow: rgba(0,0,0,0.3) 0px 1px 2px 0px, rgba(0, 0, 0, 0.5) 0px 2px 6px 2px;
+     border-radius:10px;
+     transition:all 200ms ease;
+   }
+   
+   .container:hover{
+     transform:scale(1.05);
+     border:1px solid cyan;
+   }
+   
+   .heading{
+     font-size:2rem;
+     font-weight:bold;
+     color:darkcyan;
+   }
+   
+ .below-heading-line{
+   width:100px;
+   height:5px;
+   border:1px solid darkcyan;
+   background-color:rgba(255,255,255,0.25);
+   border-radius:2px;
+   transition:all 0.5s linear;
+ }
+ 
+ .container:hover .below-heading-line{
+   background-color:cyan;
+ }
+ 
+ .input-section{
+   width:100%;
+   margin-top:25px;
+ }
+ .input-cnt{
+   width:100%;
+   margin:35px 0px;
+   display:flex;
+   flex-direction:column;
+   position:relative;
+ }
+ 
+ .input-box{
+   width:100%;
+   outline:none;
+   border:1px solid rgba(255, 255, 255,0.25);
+   border-radius:3px;
+   background-color:#1d2b3a;
+   font-size:1rem;
+   font-weight:normal;
+   color:white;
+   padding:10px;
+   transition:all 0.5s linear;
+ }
+ .input-cnt label{
+  position:absolute;
+  left:0;
+  padding:10px;
+  font-size:1rem;
+  color:rgba(2552,255,255,0.25);
+  text-transform:uppercase;
+  transition:0.5s
+ }
+ 
+ .input-cnt .input-box:focus ~ label,.input-cnt .input-box:valid ~ label{
+   color:#00dfc4;
+   transform:translatex(10px) translateY(-7px);
+   font-size:0.65rem;
+   padding:0px 10px;
+   background-color:#1d2b3a;
+   border-left:1px solid #00dfc4;
+   border-right:1px solid #00dfc4;
+   letter-spacing:0.2em;
+ }
+ .input-cnt:nth-child(2) .input-box:valid ~ label,.input-cnt:nth-child(2) .input-box:focus ~ label{
+   background-color:#00dfc4;
+   color:#1d2b3a;
+   border-radius:2px;
+ }
+ .input-cnt .input-box:valid, .input-cnt.input-box:focus{
+   border:1px solid #00dfc4;
+ }
+ .button-section{
+   margin-top:-5px;
+ }
+ .Login-btn{
+   border:none;
+   outline:none;
+   font-size:1rem;
+   font-weight:500;
+   padding:10px 45px;
+   border-radius:10px;
+   background-color:#1d2b3a;
+   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 5px 0px inset;
+   color:darkcyan;
+   border:1px solid darkcyan;
+   cursor:pointer;
+   transition:all 0.5s ease;
+   
+}
+
+.Login-btn:hover{
+  color:cyan;
+  border:1px solid cyan;
+}
+
+.social-link-section{
+  width:100%;
+  margin-top:25px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.social-link-section>a{
+ display:black;
+ font-size:1.2rem;
+ font-weight:normal;
+ padding:5px 12px;
+ color:darkcyan;
+ border:1px solid darkcyan;
+ border-radius:5p;
+ margin:0px 15px;
+ transition:all 0.15s linear;
+}
+.social-link-section>a:hover{
+  color:cyan;
+  border:1px solid cyan;
+}
+@media(max-width:480px){
+    .container{
+        width:90vw;
+    }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Login</h1>
+    <div class="below-heading-line"></div>
+  <div class="input-section">
+    <div class="input-cnt">
+      <input  class="input-box" type="text" required>
+      <label class="input-label">First Name</span>
+    </div>
+  <div class="input-cnt">
+        <input class="input-box" type="text" required>
+        <label class="input-label">Last Name</span>
+  </div>
+  </div>
+ <div class="button-section">
+   <button class="Login-btn">Login</button>
+ </div>
+ 
+<div class="social-link-section">
+  <a href="#">
+    <i class="fa fa-instagram"></i>
+  </a>
+  
+  <a href="#">
+    <i class="fa fa-linkedin"></i>
+  </a>
+ <a htef="#">
+   <i class="fa fa-twitter"></i>
+ </a>
+</div>
+  </div>
+</body>
+
+</html>
+

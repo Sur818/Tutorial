@@ -1,0 +1,51 @@
+@media (max-width:1250px) {
+    body >div:first-child{
+        width:40vw;
+    }
+}
+
+@media (max-width:1080px){
+    body >div:first-child{
+        width:55vw;
+    }
+}
+
+@media (max-width:720px){
+    body >div:first-child{
+        width:65vw;
+    }
+    .toast{
+        z-index: 10;
+       }
+}
+
+@media (max-width:560px){
+    body{
+        background-color: white;
+    }
+
+    body >div:first-child{
+        border-radius: 0px;
+        width:100vw;
+        position:fixed;
+        top:0px;
+        left:0px;
+        transform: none;
+        box-shadow: none;
+    }
+
+    .main-container{
+        transform: none;
+    }
+
+    .toast{
+       position:relative;
+       top:300px;
+    }
+
+    .toast.active{
+     
+    }
+
+}
+

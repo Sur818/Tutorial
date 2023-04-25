@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>complete login and signup system</title>
+  <script src="https://kit.fontawesome.com/1e190727d8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="main-container">
+    <h1 id="main-heading" class="main-heading">Login Form</h1>
+    <div id="primary-message-box"><span id="primary-message">hello</span>
+      <i class="fa-solid fa-xmark" onclick="removeMsg();"></i>
+    </div>
+
+
+    <div class="tab">
+      <button class="tablinks" id="defaultOpen" onclick="openSection(event, 'Login-sec')">Login</button>
+      <button class="tablinks" id="signup-btn" onclick="openSection(event, 'Signup-sec')">Signup</button>
+    </div>
+
+    <!---------------------login-section----------------------------------------->
+    <section id="Login-sec" class="tabcontent">
+      <form action="./loginDone.html" method="" id="loginForm">
+        <div class="input-section">
+          <div class="input-cnt">
+            <input type="email" class="input-box" name="" autocomplete="" id="login-email-box" required
+              placeholder="Email Address">
+          </div>
+          <div class="input-cnt">
+            <input type="password" class="input-box" name="" id="login-pass" required placeholder="Password">
+            <span><i class="fa fa-eye" onclick="showPassword('login-pass')" aria-hidden="true"></i></span>
+          </div>
+        </div>
+        <div class="forgot-link-sec">
+          <a href="forgot.html">Forgot password?</a>
+        </div>
+        <div class="button-section">
+          <button class="login-btn" type="submit" id="login-btn">Login</button>
+        </div>
+      </form>
+      <div class="last-information-section">
+        <p> <span>Not a member?</span><a href='javascript:;' id="info"   onclick="openSection(event, 'Signup-sec')">Signup now</a>
+        </p>
+      </div>
+    </section>
+
+    <!---------------signup-section------------------------------>
+    <section id="Signup-sec" class="tabcontent">
+      <form action="RegistrationDone.html" method="post" id="signupForm" target="_blank">
+        <div class="input-section">
+          <div class="input-cnt">
+            <input type="email" class="input-box" name="" id="signup-email-box" required placeholder="Email Address">
+          </div>
+          <span id="message"></span>
+          <div class="input-cnt">
+            <input type="password" class="input-box" name="" id="signup-pass" onInput="verifyPassword(this.id)" required
+              placeholder="Password">
+            <span><i class="fa fa-eye" onclick="showPassword('signup-pass')" aria-hidden="true"></i></span>
+          </div>
+          <div class="input-cnt">
+            <input type="password" class="input-box" name="" id="signupconfirm_pass" onkeyup="validate_password()"
+              required placeholder="Confirm Password">
+            <span><i class="fa fa-eye" onclick="showPassword('signupconfirm_pass')" aria-hidden="true"></i></span>
+          </div>
+        </div>
+        <span id="wrong_pass_alert"></span>
+        <div class="forgot-link-sec">
+          <a href="forgot.html">Forgot password?</a>
+        </div>
+        <div class="button-section">
+          <button class="Signup-btn" type="submit" onclick="wrong_pass_alert()" id="create">Signup</button>
+        </div>
+      </form>
+      <div class="last-information-section">
+        <p> <span>Allready member ?</span><a href="">Login now</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="index.js"></script> 
+  <script src="storage.js"></script>
+</body>
+
+</html>

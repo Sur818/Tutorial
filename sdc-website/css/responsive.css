@@ -1,0 +1,95 @@
+@media screen and (min-width: 700px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .sdc-title {
+    font-size: 80px;
+  }
+
+  .main-container {
+    width: 90vw;
+  }
+
+  .card-container {
+    width: inherit;
+    flex-direction: row;
+  }
+  .card-person-name {
+    font-size: 1.4rem;
+  }
+  .card-body {
+    width: 210px;
+    padding: 25px 0;
+  }
+  .contact-social-outer {
+    flex-direction: row;
+  }
+  .card-person-social {
+    width: 50%;
+  }
+  .contact-social-outer > section {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    /* background-color: rgb(60, 255, 0); */
+  }
+
+  .sdc-title {
+    font-size: 80px;
+  }
+  .main-container {
+    width: 80vw;
+  }
+
+  .card-container {
+    width: inherit;
+    flex-direction: row;
+  }
+
+  .contact-social-outer {
+    flex-direction: row;
+  }
+
+  .contact-social-outer > section {
+    width: 50%;
+  }
+  .card-body {
+    width: 215px;
+    padding: 25px 0;
+  }
+  .card-person-social {
+    width: 60%;
+  }
+
+  .bar-icon {
+    display: none;
+  }
+
+  .respo-ol-tag {
+    flex-direction: row;
+  }
+
+  .page-links {
+    display: list-item;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    /* background-color: rgb(4, 0, 252); */
+  }
+
+  .main-container {
+    width: 85vw;
+  }
+
+  .card-container {
+    width: inherit;
+    flex-direction: row;
+    width: 100%;
+  }
+}
